@@ -1,0 +1,10 @@
+Please enter the name of a person:
+<%= text_field_tag 'person_name' %>
+
+<script>
+$(function() {
+  $("#person_name" ).autocomplete({
+    source: "<%= people_autocomplete_person_name_path %>"
+  });
+})
+</script>
